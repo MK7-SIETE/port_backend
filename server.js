@@ -20,18 +20,15 @@ app.post("/contact", async (req, res) => {
   }
 
   // Create email transporter using Gmail
-  const transporter = nodemailer.createTransport({
-     host: "smtp.gmail.com",
-     port: 587,
-     secure: false,
-     auth: {
-       user: process.env.EMAIL_USER,
-       pass: process.env.EMAIL_PASS,
-     },
-     tls: {
-       rejectUnauthorized: false
-     }
-   });
+const transporter = nodemailer.createTransport({
+  host: "smtp.sendgrid.net",
+  port: 587,
+  secure: false,
+  auth: {
+    user: "apikey",
+    pass: process.env.SENDGRID_API_KEY,
+  },
+});
 
   try {
     // Email 1: Notification to YOU with visitor's message
