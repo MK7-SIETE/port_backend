@@ -93,7 +93,7 @@ app.post("/contact", async (req, res) => {
 
               <!-- Portfolio button -->
               <div style="text-align: center; margin-bottom: 30px;">
-                <a href="YOUR_PORTFOLIO_URL_HERE" style="display: inline-block; background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%); color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 50px; font-size: 16px; font-weight: 600; box-shadow: 0 10px 25px rgba(0,31,63,0.4);">
+                <a href="https://betsamukuba.netlify.app/" style="display: inline-block; background: linear-gradient(135deg, #001f3f 0%, #003d7a 100%); color: #ffffff; text-decoration: none; padding: 15px 40px; border-radius: 50px; font-size: 16px; font-weight: 600; box-shadow: 0 10px 25px rgba(0,31,63,0.4);">
                   View My Portfolio
                 </a>
               </div>
